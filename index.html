@@ -123,17 +123,17 @@
         <form action="/" method="POST">
           <label>
             Name:<br />
-            <input name="name" />
+            <input name="name" required />
           </label><br />
 
           <label>
             Phone:<br />
-            <input type="tel" name="phone" />
+            <input type="tel" name="phone" required />
           </label><br />
 
           <label>
             Email:<br />
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
           </label><br />
 
           <label>
@@ -150,7 +150,6 @@
             <input type="radio" name="gender" value="female" /> Female
           </label><br />
 
-          <!-- TODO Programming language -->
           <label>
             Favorite programming languages:<br />
             <select name="languages" multiple="multiple">
@@ -174,7 +173,7 @@
           </label><br />
 
           <label>
-            <input type="checkbox" name="familiarized" />
+            <input type="checkbox" name="familiarized" required />
             I have read the contract
           </label><br />
 
