@@ -115,8 +115,70 @@
               FTP</a>
           </li>
         </ul>
+      </section>
 
-        <form method="post" id="form">
+      <section id="form">
+        <h2>Form</h2>
+
+        <form action="/" method="POST">
+          <label>
+            Name:<br />
+            <input name="name" />
+          </label><br />
+
+          <label>
+            Phone:<br />
+            <input type="tel" name="phone" />
+          </label><br />
+
+          <label>
+            Email:<br />
+            <input type="email" name="email" />
+          </label><br />
+
+          <label>
+            Birthday:<br />
+            <input type="date" name="birthday" />
+          </label><br />
+
+          Gender:<br />
+          <label>
+            <input type="radio" checked="checked" name="gender"
+              value="male" /> Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" /> Female
+          </label><br />
+
+          <!-- TODO Programming language -->
+          <label>
+            Favorite programming languages:<br />
+            <select name="languages" multiple="multiple">
+              <option value="Pascal">Pascal</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="Java">Java</option>
+              <option value="Haskel">Haskel</option>
+              <option value="Clojure">Clojure</option>
+              <option value="Prolog">Prolog</option>
+              <option value="Scala">Scala</option>
+            </select>
+          </label><br />
+
+          <label>
+            Biography:<br />
+            <textarea name="biography"></textarea>
+          </label><br />
+
+          <label>
+            <input type="checkbox" name="familiarized" />
+            I have read the contract
+          </label><br />
+
+          <button type="submit">Save</button>
         </form>
       </section>
     </main>
