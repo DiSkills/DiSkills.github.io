@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-size: 120%;
+}
+
+header, footer {
+    width: 100%;
+
+    background-color: #c4d0c9;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer div {
+    padding: 15px;
+}
+
+header {
+    height: 120px;
+
+    text-align: center;
+}
+
+#site-name {
+    display: inline-block;
+}
+
+nav {
+    float: right;
+
+    max-width: 960px;
+}
+
+nav ul {
+    border: 1px solid;
+
+    margin: 0;
+    padding: 2px 2px 3px 10px;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 10px;
+
+    display: inline-block;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#main-logo {
+    float: left;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    margin: 10px;
+}
+
+
+.content {
+    max-width: 960px;
+
+    background-color: #ccc;
+
+    margin: 0 auto;
+    padding: 0 15px 15px 15px;
+}
+
+.content h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#table table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+#table th, #table td {
+    border: 1px solid;
+
+    text-align: center;
+}
+
+ #table tbody tr:nth-child(even) {
+     background-color: #93ad84;
+ }
+
+ #table tbody tr:nth-child(odd) {
+     background-color: #a6c363;
+ }
+
+ #workmap {
+     width: 600px;
+     height: 400px;
+ }
