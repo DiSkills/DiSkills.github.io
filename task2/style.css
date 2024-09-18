@@ -61,3 +61,43 @@ nav a {
 
     margin: 10px;
 }
+
+
+.content {
+    max-width: 960px;
+
+    background-color: #ccc;
+
+    margin: 0 auto;
+    padding: 0 15px 15px 15px;
+}
+
+.content h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#table table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+#table th, #table td {
+    border: 1px solid;
+
+    text-align: center;
+}
+
+ #table tbody tr:nth-child(even) {
+     background-color: #93ad84;
+ }
+
+ #table tbody tr:nth-child(odd) {
+     background-color: #a6c363;
+ }
+
+ #workmap {
+     width: 600px;
+     height: 400px;
+ }
