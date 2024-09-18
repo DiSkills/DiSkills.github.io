@@ -1,11 +1,20 @@
 body {
     margin: 0;
+    font-size: 120%;
 }
 
 header, footer {
     width: 100%;
 
     background-color: #c4d0c9;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer div {
+    padding: 15px;
 }
 
 header {
@@ -15,13 +24,13 @@ header {
 }
 
 #site-name {
-    margin-top: 30px;
-
     display: inline-block;
 }
 
 nav {
     float: right;
+
+    max-width: 960px;
 }
 
 nav ul {
