@@ -18,7 +18,7 @@ footer div {
 }
 
 header {
-    height: 120px;
+    /* height: 120px; */
 
     text-align: center;
 }
@@ -28,13 +28,16 @@ header {
 }
 
 nav {
-    float: right;
+    clear: both;
+/*     float: right; */
 
-    max-width: 960px;
+/*     max-width: 960px; */
 }
 
 nav ul {
     border: 1px solid;
+
+    text-align: left;
 
     margin: 0;
     padding: 2px 2px 3px 10px;
@@ -44,7 +47,7 @@ nav ul {
 nav ul li {
     margin-right: 10px;
 
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 nav a {
@@ -89,15 +92,15 @@ nav a {
     text-align: center;
 }
 
- #table tbody tr:nth-child(even) {
-     background-color: #93ad84;
- }
+#table tbody tr:nth-child(even) {
+    background-color: #93ad84;
+}
 
- #table tbody tr:nth-child(odd) {
-     background-color: #a6c363;
- }
+#table tbody tr:nth-child(odd) {
+    background-color: #a6c363;
+}
 
- #workmap {
-     width: 600px;
-     height: 400px;
- }
+#workmap {
+    width: 600px;
+    height: 400px;
+}
