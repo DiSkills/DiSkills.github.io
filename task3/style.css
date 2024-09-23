@@ -1,11 +1,13 @@
 body {
-    margin: 0;
     font-size: 120%;
+
+    margin: 0;
 }
 
 header, footer {
     width: 100%;
 
+    text-align: center;
     background-color: #c4d0c9;
 }
 
@@ -17,11 +19,9 @@ footer div {
     padding: 15px;
 }
 
-header {
+/* header { */
     /* height: 120px; */
-
-    text-align: center;
-}
+/* } */
 
 #site-name {
     display: inline-block;
@@ -38,10 +38,10 @@ nav ul {
     border: 1px solid;
 
     text-align: left;
+    list-style-type: none;
 
     margin: 0;
     padding: 2px 2px 3px 10px;
-    list-style-type: none;
 }
 
 nav ul li {
@@ -66,18 +66,53 @@ nav a {
 }
 
 
+main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
 .content {
+    width: 100%;
     max-width: 960px;
 
     background-color: #ccc;
 
-    margin: 0 auto;
-    padding: 0 15px 15px 15px;
+    margin-top: 10px;
 }
 
 .content h2 {
-    padding-top: 10px;
     text-align: center;
+
+    padding-top: 10px;
+}
+
+.content form {
+    padding: 0 15px 15px 15px;
+}
+
+.content form button {
+    width: 100%;
+}
+
+#hyperlinks ul {
+    padding-right: 15px;
+}
+
+#hyperlinks {
+    order: 1;
+}
+
+#form {
+    order: 2;
+}
+
+#table-container {
+    overflow-x: auto;
+
+    padding-bottom: 15px;
 }
 
 #table table {
@@ -101,6 +136,6 @@ nav a {
 }
 
 #workmap {
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
 }
