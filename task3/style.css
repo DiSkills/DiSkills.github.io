@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+h2 {
+    margin-top: 0;
+}
+
 header, footer {
     width: 100%;
 
@@ -19,19 +23,12 @@ footer div {
     padding: 15px;
 }
 
-/* header { */
-    /* height: 120px; */
-/* } */
-
 #site-name {
     display: inline-block;
 }
 
 nav {
     clear: both;
-/*     float: right; */
-
-/*     max-width: 960px; */
 }
 
 nav ul {
@@ -46,8 +43,6 @@ nav ul {
 
 nav ul li {
     margin-right: 10px;
-
-    /* display: inline-block; */
 }
 
 nav a {
@@ -58,8 +53,8 @@ nav a {
 #main-logo {
     float: left;
 
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
 
     margin: 10px;
@@ -80,7 +75,7 @@ main {
 
     background-color: #ccc;
 
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .content h2 {
@@ -138,4 +133,36 @@ main {
 #workmap {
     width: 300px;
     height: 200px;
+}
+
+
+@media screen and (min-device-width: 800px) {
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        max-width: 960px;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    #main-logo {
+        width: 100px;
+        height: 100px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    header {
+        height: 120px;
+    }
+
+    #hyperlinks {
+        order: 0;
+    }
 }
