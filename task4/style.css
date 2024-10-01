@@ -1,0 +1,22 @@
+.content {
+    background-color: #ccc;
+}
+
+.main {
+    max-width: 960px;
+}
+
+header, footer {
+    background-color: #c4d0c9;
+}
+
+body {
+    font-size: 120%;
+    font-family: sans-serif;
+}
+
+
+.logo__img {
+    width: 100px;
+    height: 100px;
+}
