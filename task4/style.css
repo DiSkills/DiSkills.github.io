@@ -2,6 +2,10 @@
     background-color: #ccc;
 }
 
+.main {
+    max-width: 960px;
+}
+
 header, footer {
     background-color: #c4d0c9;
 }
