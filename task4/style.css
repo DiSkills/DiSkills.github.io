@@ -2,16 +2,19 @@
     background-color: #ccc;
 }
 
-.main {
+.mxw-960 {
     max-width: 960px;
 }
 
-header, footer {
+.bgc-green {
     background-color: #c4d0c9;
 }
 
-body {
+.fs-120p {
     font-size: 120%;
+}
+
+.ff-sans-serif {
     font-family: sans-serif;
 }
 
