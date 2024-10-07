@@ -6,8 +6,8 @@ function isNumber(str) {
 function calculate(event) {
     event.preventDefault();
 
-    let priceElement = document.getElementById("product").value,
-        countElement = document.getElementById("quantity").value;
+    let priceElement = document.getElementById("product").value;
+    let countElement = document.getElementById("quantity").value;
     if (priceElement === "") {
         alert("Select the product!");
         return;
@@ -23,6 +23,6 @@ function calculate(event) {
 }
 
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", function () {
     document.getElementById("btn").addEventListener("click", calculate);
 });
