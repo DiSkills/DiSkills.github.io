@@ -6,20 +6,22 @@ function isNumber(str) {
 function calculate(event) {
     event.preventDefault();
 
+    let result = document.getElementById("result");
+
     let priceElement = document.getElementById("product").value;
     let countElement = document.getElementById("quantity").value;
+
+    let content;
+
     if (priceElement === "") {
-        alert("Select the product!");
-        return;
+        content = "Select the product!";
+    } else if (!isNumber(countElement)) {
+        content = "Enter a natural number!";
+    } else {
+        content = parseInt(priceElement) * parseInt(countElement);
     }
 
-    if (!isNumber(countElement)) {
-        alert("Enter a natural number!");
-        return;
-    }
-
-    let result = document.getElementById("result");
-    result.innerHTML = parseInt(priceElement) * parseInt(countElement);
+    result.innerHTML = content;
 }
 
 
