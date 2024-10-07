@@ -6,15 +6,20 @@ function isNumber(str) {
 function calculate(event) {
     event.preventDefault();
 
-    let price = parseInt(document.getElementById("product").value),
-        count = document.getElementById("quantity").value;
-    if (!isNumber(count)) {
+    let priceElement = document.getElementById("product").value,
+        countElement = document.getElementById("quantity").value;
+    if (priceElement === "") {
+        alert("Select the product!");
+        return;
+    }
+
+    if (!isNumber(countElement)) {
         alert("Enter a natural number!");
         return;
     }
 
     let result = document.getElementById("result");
-    result.innerHTML = price * count;
+    result.innerHTML = parseInt(priceElement) * parseInt(countElement);
 }
 
 
