@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>The fifth task</title>
+  </head>
+
+  <body>
+
+    <form>
+      <label for="product">Product:</label>
+      <select id="product" name="product" required>
+          <option value="2000">Smuta</option>
+          <option value="435">Volcanoids</option>
+          <option value="2500">Atomic Heart</option>
+          <option value="1799">Pacific Drive</option>
+      </select><br />
+
+      <label for="quantity">Quantity:</label>
+      <input id="quantity" name="quantity"
+        min="1" value="1" required type="number" /><br />
+
+      <button id="btn" type="submit">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="calc.js"></script>
+
+  </body>
+</html>
