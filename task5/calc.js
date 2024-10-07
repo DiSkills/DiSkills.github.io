@@ -1,5 +1,5 @@
 function isNumber(str) {
-    return str.match(/^[1-9]\d*$/) != null;
+    return str.match(/^[1-9]\d*$/) !== null;
 }
 
 
