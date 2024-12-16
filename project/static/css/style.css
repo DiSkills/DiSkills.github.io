@@ -1,0 +1,18 @@
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        margin-top: 65px;
+    }
+}

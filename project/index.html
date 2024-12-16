@@ -21,15 +21,163 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/header.css" />
+    <script src="src/header.js" defer></script>
+
   </head>
 
   <body>
 
-    <header>
-      Шапка + меню
-    </header>
+    <header class="navbar navbar-default navbar-expand-lg fixed-bottom
+      sticky-lg-top d-flex justify-content-center">
+      <div class="container-fluid text-center row d-flex justify-content-center">
+        <div class="col-12 row d-flex justify-content-center ">
+          <div class="col-12 col-lg-2 d-flex align-middle align-items-center
+            align-text-center justify-content-between">
+            <figure class="figure align-middle align-items-center my-auto">
+              <a class="navbar-br align-middle" href="#">
+                <img src="static/images/logo-initlab.svg" alt="logo"
+                  class="figure-img img-fluid" />
+              </a>
+            </figure>
 
-    <div>
+            <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-10 collapse navbar-collapse" id="navbarNavDropdown"
+            style="margin:0 10%">
+            <div class="container-fluid text-center">
+              <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ПОДДЕРЖКА DRUPAL</a>
+                </li>
+                <li class="nav-item expanded dropdown" id="devops">
+                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    DEVOPS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Миграция</a></li>
+                    <li><a class="dropdown-item" href="#">Бекапы</a></li>
+                    <li><a class="dropdown-item" href="#">Аудит безопасности</a></li>
+                    <li><a class="dropdown-item" href="#">Оптимизация скорости</a></li>
+                    <li><a class="dropdown-item" href="#">Переезд на HTTPS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">БЛОГ</a></li>
+                <li class="nav-item dropdown" id="promotion">
+                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ПРОДВИЖЕНИЕ
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Реклама</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown" id="about">
+                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    О НАС
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Команда</a></li>
+                    <li><a class="dropdown-item" href="#">DrupalGive</a></li>
+                    <li><a class="dropdown-item" href="#">Курсы Drupal</a></li>
+                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ПРОЕКТЫ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div id="video-block">
+      <div id="video-block__filter"></div>
+      <video class="video-background" src="static/images/video.mp4"
+        playsinline autoplay="autoplay" loop preload="auto" muted>
+      </video>
+    </div>
+
+    <div class="container header">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="header__title">Поддержка<br />сайтов на Drupal</h1>
+          <div class="header__sub-title">
+            Сопровождение и поддержка сайтов<br />
+            на CMS Drupal любых версий и запущенности
+          </div>
+          <a href="#rates" class="header__rate-button">ТАРИФЫ</a>
+        </div>
+        <div class="col-md-6">
+          <div class="row header__redline__wrap">
+            <div class="col-sm-4 col-6 header__redline__item">
+              <div class="header__redline">
+                <div class="header__redline__title">
+                  #1<img src="./static/images/cup.png" alt="#1" />
+                </div>
+                <div class="header__redline__text">
+                  Drupal-разработчик<br />в России
+                  по версии<br />Рейтинга Рунета
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-6 header__redline__item">
+              <div class="header__redline">
+                <div class="header__redline__title">3+</div>
+                <div class="header__redline__text">
+                  средний опыт<br />специалистов более<br />3 лет
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-6 header__redline__item">
+              <div class="header__redline">
+                <div class="header__redline__title">14</div>
+                <div class="header__redline__text">лет опыта в сфере Drupal</div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-6 header__redline__item">
+              <div class="header__redline">
+                <div class="header__redline__title">50+</div>
+                <div class="header__redline__text">
+                  модулей и тем<br />в формате DrupalGive
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-6 header__redline__item">
+              <div class="header__redline">
+                <div class="header__redline__title">90 000</div>
+                <div class="header__redline__text">
+                  часов поддержки<br />сайтов на Drupal
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-6 header__redline__item">
+              <div class="header__redline">
+                <div class="header__redline__title">300+</div>
+                <div class="header__redline__text">
+                  Проектов<br />на поддержке
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
       <div>
         13 лет совершенствуем компетенции в Друпал поддержке!
       </div>
@@ -65,7 +213,7 @@
       <div>
         FAQ
       </div>
-    </div>
+    </main>
 
     <footer>
       Футер
