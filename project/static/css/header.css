@@ -1,0 +1,194 @@
+#navbarNavDropdown {
+    margin: auto 0 !important;
+}
+
+header {
+    padding-top: 20px;
+    font-size: medium;
+    color: aliceblue;
+    background-color: rgb(5, 6, 19);
+}
+
+.nav-link, .nav-link:hover, .navbar {
+    color: aliceblue;
+    --bs-navbar-active-color:: aliceblue;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    background-color: brown;
+}
+
+#video-block {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+#video-block__filter {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.video-background {
+    filter: blur(2px);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.header {
+    color: white;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.header__sub-title {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 55px;
+    opacity: 70%;
+    text-align: center;
+}
+
+.header__rate-button {
+    border-radius: 5px;
+    border: 2px solid #f14d34;
+    color: white;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    line-height: 12px;
+    margin: 0 auto 55px;
+    max-width: 100%;
+    padding: 22px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 300ms;
+    width: 220px;
+}
+
+.header__rate-button:hover {
+    background: #f14d34;
+    color: white;
+    text-decoration: none;
+}
+
+.header__redline {
+    border-left: 3px solid #f14d34;
+    height: 100%;
+    min-height: 80px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.header__redline__item {
+    margin-bottom: 30px;
+}
+
+.header__redline__item:first-of-type .header__redline__title {
+    font-size: 48px;
+    margin-top: -22px;
+}
+
+.header__redline__title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.header__redline__text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.header__redline a {
+    color: #f14d34;
+}
+
+.header__redline__wrap {
+    margin-top: 50px;
+}
+
+.header__title {
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    #video-block {
+        height: 97%;
+    }
+
+    .main {
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #video-block {
+        height: 90%;
+    }
+
+    .header__title {
+        text-align: left;
+    }
+
+    .header {
+        padding-top: 40px;
+    }
+
+    .header:before {
+        background-position: left top;
+        background-size: inherit;
+    }
+
+    .header__sub-title {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .header__redline__item {
+        margin-bottom: 96px;
+    }
+
+    h1 {
+        font-size: 52px;
+        font-weight: bold;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .header__rate-button {
+        margin-bottom: 155px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        background-color: #050613;
+    }
+}
