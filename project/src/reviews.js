@@ -1,8 +1,8 @@
 function updateSlideCounter(currentIndex, totalSlides) {
-    let current = (currentIndex + 1).toString().padStart(2, '0');
-    let total = totalSlides.toString().padStart(2, '0');
+    let current = (currentIndex + 1).toString().padStart(2, "0");
+    let total = totalSlides.toString().padStart(2, "0");
 
-    $('.slide-num').html(
+    $(".slide-num").html(
         `<span class="slide-num-digit">${current[0]}</span>
         <span class="slide-num-digit">${current[1]}</span> /
         <span class="slide-num-digit">${total[0]}</span>
@@ -10,8 +10,8 @@ function updateSlideCounter(currentIndex, totalSlides) {
     );
 }
 
-$(document).ready(function () {
-    let slider = $('.reviews__slider');
+document.addEventListener("DOMContentLoaded", function () {
+    let slider = $(".reviews__slider");
 
     slider.slick({
         adaptiveHeight: true,
@@ -19,19 +19,19 @@ $(document).ready(function () {
         dots: false,
         fade: true,
         infinite: true,
-        lazyLoad: 'ondemand',
+        lazyLoad: "ondemand",
         slidesToScroll: 1,
         slidesToShow: 1,
         speed: 300
     });
 
-    let totalSlides = slider.slick('getSlick').slideCount;
+    let totalSlides = slider.slick("getSlick").slideCount;
     updateSlideCounter(0, totalSlides);
 
-    slider.on('afterChange', function (event, slick, currentSlide) {
+    slider.on("afterChange", function (event, slick, currentSlide) {
         updateSlideCounter(currentSlide, totalSlides);
     });
 
-    $('.slick-prev').click(() => slider.slick('slickPrev'));
-    $('.slick-next').click(() => slider.slick('slickNext'));
+    $(".slick-prev").click(() => slider.slick("slickPrev"));
+    $(".slick-next").click(() => slider.slick("slickNext"));
 });

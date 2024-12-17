@@ -25,4 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.addEventListener("mouseover", function () { navbarShow(id); });
         menu.addEventListener("mouseout", function () { navbarHide(id); });
     });
-})
+});
