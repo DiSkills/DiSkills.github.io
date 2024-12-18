@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="en">
 
   <head>
 
@@ -31,8 +31,10 @@
 
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/header.css" />
+    <link rel="stylesheet" href="static/css/tariff.css" />
     <link rel="stylesheet" href="static/css/reviews.css" />
     <script src="src/header.js" defer></script>
+    <script src="src/tariff.js" defer></script>
     <script src="src/reviews.js" defer></script>
 
   </head>
@@ -46,7 +48,7 @@
           <div class="col-12 col-lg-2 d-flex align-middle align-items-center
             align-text-center justify-content-between">
             <figure class="figure align-middle align-items-center my-auto">
-              <a class="navbar-br align-middle" href="#">
+              <a class="navbar-br align-middle" href="">
                 <img src="static/images/logo-initlab.svg" alt="logo"
                   class="figure-img img-fluid" />
               </a>
@@ -64,48 +66,45 @@
             <div class="container-fluid text-center">
               <ul class="navbar-nav justify-content-end">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ПОДДЕРЖКА DRUPAL</a>
+                  <a class="nav-link" href="">DRUPAL SUPPORT</a>
                 </li>
                 <li class="nav-item expanded dropdown" id="devops">
-                  <a class="nav-link dropdown-toggle" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    DEVOPS
+                  <a class="nav-link dropdown-toggle" href="" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">DEVOPS
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Миграция</a></li>
-                    <li><a class="dropdown-item" href="#">Бекапы</a></li>
-                    <li><a class="dropdown-item" href="#">Аудит безопасности</a></li>
-                    <li><a class="dropdown-item" href="#">Оптимизация скорости</a></li>
-                    <li><a class="dropdown-item" href="#">Переезд на HTTPS</a></li>
+                    <li><a class="dropdown-item" href="">Migrations</a></li>
+                    <li><a class="dropdown-item" href="">Backups</a></li>
+                    <li><a class="dropdown-item" href="">Security audit</a></li>
+                    <li><a class="dropdown-item" href="">Speed optimization</a></li>
+                    <li><a class="dropdown-item" href="">Moving to HTTPS</a></li>
                   </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">БЛОГ</a></li>
+                <li class="nav-item"><a class="nav-link" href="">BLOG</a></li>
                 <li class="nav-item dropdown" id="promotion">
-                  <a class="nav-link dropdown-toggle" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    ПРОДВИЖЕНИЕ
+                  <a class="nav-link dropdown-toggle" href="" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">PROMOTION
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Реклама</a></li>
+                    <li><a class="dropdown-item" href="">Advertising</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown" id="about">
-                  <a class="nav-link dropdown-toggle" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    О НАС
+                  <a class="nav-link dropdown-toggle" href="" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">ABOUT
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Команда</a></li>
-                    <li><a class="dropdown-item" href="#">DrupalGive</a></li>
-                    <li><a class="dropdown-item" href="#">Курсы Drupal</a></li>
-                    <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                    <li><a class="dropdown-item" href="">Team</a></li>
+                    <li><a class="dropdown-item" href="">DrupalGive</a></li>
+                    <li><a class="dropdown-item" href="">Drupal Courses</a></li>
+                    <li><a class="dropdown-item" href="">Vacancies</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ПРОЕКТЫ</a>
+                  <a class="nav-link" href="">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">КОНТАКТЫ</a>
+                  <a class="nav-link" href="#footer">CONTACTS</a>
                 </li>
               </ul>
             </div>
@@ -125,12 +124,12 @@
       <div class="container header">
         <div class="row">
           <div class="col-md-6">
-            <h1 class="header__title">Поддержка<br />сайтов на Drupal</h1>
+            <h1 class="header__title">Drupal Website Support</h1>
             <div class="header__sub-title">
-              Сопровождение и поддержка сайтов<br />
-              на CMS Drupal любых версий и запущенности
+              Maintenance and support of sites<br />
+              on CMS Drupal of any version and state of operation
             </div>
-            <a href="#rates" class="header__rate-button">ТАРИФЫ</a>
+            <a href="#tariffs" class="header__rate-button">Tariffs</a>
           </div>
           <div class="col-md-6">
             <div class="row header__redline__wrap">
@@ -140,8 +139,7 @@
                     #1<img src="./static/images/cup.png" alt="#1" />
                   </div>
                   <div class="header__redline__text">
-                    Drupal-разработчик<br />в России
-                    по версии<br />Рейтинга Рунета
+                    Drupal developer<br />in the Runet Rating
                   </div>
                 </div>
               </div>
@@ -149,21 +147,24 @@
                 <div class="header__redline">
                   <div class="header__redline__title">3+</div>
                   <div class="header__redline__text">
-                    средний опыт<br />специалистов более<br />3 лет
+                    our specialists have 3+<br />
+                    years of Drupal experience on average
                   </div>
                 </div>
               </div>
               <div class="col-sm-4 col-6 header__redline__item">
                 <div class="header__redline">
                   <div class="header__redline__title">14</div>
-                  <div class="header__redline__text">лет опыта в сфере Drupal</div>
+                  <div class="header__redline__text">
+                    years of Drupal-related experience
+                  </div>
                 </div>
               </div>
               <div class="col-sm-4 col-6 header__redline__item">
                 <div class="header__redline">
                   <div class="header__redline__title">50+</div>
                   <div class="header__redline__text">
-                    модулей и тем<br />в формате DrupalGive
+                    DrupalGive themes<br />and modules 
                   </div>
                 </div>
               </div>
@@ -171,7 +172,7 @@
                 <div class="header__redline">
                   <div class="header__redline__title">90 000</div>
                   <div class="header__redline__text">
-                    часов поддержки<br />сайтов на Drupal
+                    hours supporting<br />Drupal-powered sites
                   </div>
                 </div>
               </div>
@@ -179,7 +180,7 @@
                 <div class="header__redline">
                   <div class="header__redline__title">300+</div>
                   <div class="header__redline__text">
-                    Проектов<br />на поддержке
+                    sites on support
                   </div>
                 </div>
               </div>
@@ -198,9 +199,100 @@
         Экспертиза в Drupal, опыт 14 лет!
       </div>
 
-      <div>
-        Тарифы
-      </div>
+      <section id="tariffs">
+        <h2 class="block-title tariffs__title">Tariffs</h2>
+
+        <div class="tariff__block">
+          <div class="tariff">
+            <div class="tariff__header">
+              <h3 class="tariff__title">Start</h3>
+            </div>
+            <div class="tariff__body">
+              <div class="tariff__body__item">
+                Development and support Drupal
+              </div>
+              <div class="tariff__body__item">
+                2 hours prepaid
+              </div>
+              <div class="tariff__body__item">
+                Search Engine Optimization
+              </div>
+              <div class="tariff__body__item">
+                Design
+              </div>
+              <div class="tariff__body__item">
+                Standart reaction time
+              </div>
+              <div class="tariff__body__item">
+                Unused paid hours credited to the next month
+              </div>
+            </div>
+            <div class="tariff__footer">
+              <a href="#footer" class="contact-form">Contact Us!</a>
+            </div>
+          </div>
+          <div class="tariff">
+            <div class="tariff__header">
+              <h3 class="tariff__title">Business</h3>
+            </div>
+            <div class="tariff__body">
+              <div class="tariff__body__item">
+                Development and support Drupal
+              </div>
+              <div class="tariff__body__item">
+                10+ hours prepaid per month
+              </div>
+              <div class="tariff__body__item">
+                Search Engine Optimization
+              </div>
+              <div class="tariff__body__item">
+                Design
+              </div>
+              <div class="tariff__body__item">
+                High response time - up to 2 business days
+              </div>
+              <div class="tariff__body__item">
+                Unused paid hours are not credited to the next month
+              </div>
+            </div>
+            <div class="tariff__footer">
+              <a href="#footer" class="contact-form">Contact Us!</a>
+            </div>
+          </div>
+          <div class="tariff">
+            <div class="tariff__header">
+              <h3 class="tariff__title">VIP</h3>
+            </div>
+            <div class="tariff__body">
+              <div class="tariff__body__item">
+                Development and support Drupal
+              </div>
+              <div class="tariff__body__item">
+                100+ hours prepaid per month
+              </div>
+              <div class="tariff__body__item">
+                Search Engine Optimization
+              </div>
+              <div class="tariff__body__item">
+                Design
+              </div>
+              <div class="tariff__body__item">
+                Fastest same-day response
+              </div>
+              <div class="tariff__body__item">
+                Unused paid hours are not credited to the next month
+              </div>
+            </div>
+            <div class="tariff__footer">
+              <a href="#footer" class="contact-form">Contact Us!</a>
+            </div>
+          </div>
+        </div>
+        <div class="tariff__not-found">
+          No plan fits your needs? Request a personalized quote!
+          <a href="#footer">I need a plan of my own</a>
+        </div>
+      </section>
 
       <div>
         Команда
@@ -211,8 +303,7 @@
       </div>
 
       <section id="reviews">
-
-        <h2 class="block-title reviews__header">Отзывы</h2>
+        <h2 class="block-title reviews__header">Reviews</h2>
 
         <div class="form-group">
           <div class="reviews__content">
