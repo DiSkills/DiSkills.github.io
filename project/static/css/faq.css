@@ -54,6 +54,13 @@
     padding-right: 3vh;
 }
 
+.faq__title{
+    text-align: center;
+    color:#050613;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 
 @media screen and (min-width: 992px){
     #faq {
