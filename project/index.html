@@ -34,9 +34,11 @@
     <link rel="stylesheet" href="static/css/tariff.css" />
     <link rel="stylesheet" href="static/css/last_cases.css" />
     <link rel="stylesheet" href="static/css/reviews.css" />
+    <link rel="stylesheet" href="static/css/footer.css" />
     <script src="src/header.js" defer></script>
     <script src="src/tariff.js" defer></script>
     <script src="src/reviews.js" defer></script>
+    <script src="src/footer.js" defer></script>
 
   </head>
 
@@ -567,8 +569,113 @@
       </div>
     </main>
 
-    <footer>
-      Футер
+    <footer id="footer" class="footer position-relative">
+      <div class="footer__background"></div>
+
+      <img src="static/images/footer-D-1.svg" alt="Decor 1"
+        class="footer__image decor-1" />
+      <img src="static/images/footer-D-2.png" alt="Decor 2"
+        class="footer__image decor-2" />
+
+      <div class="container">
+        <div class="footer__content position-relative">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h2 class="footer__title">Apply for site</h2>
+              <h2 class="footer__title">support or development</h2>
+              <p class="footer__description">
+                Do you need to refine the functionality of a ready-made Drupal
+                site or create a new one? Evaluate the development for your
+                requirements? Just contact us and our manager will help you!
+              </p>
+
+              <div class="d-flex align-items-center mt-4">
+                <div class="me-3">
+                  <div class="d-flex align-items-center mb-2">
+                    <img src="static/images/phone_icon.png" alt="Phone icon"
+                      class="icon me-2" />
+                    <p class="footer__contact mb-0">
+                      <a href="tel:+78002222673"
+                        class="text-white text-decoration-none">
+                        8 800 222-26-73
+                      </a>
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="static/images/mail_icon.png" alt="Mail icon"
+                      class="icon me-2" />
+                    <p class="footer__contact mb-0">
+                      <a href="mailto:info@drupal-coder.ru"
+                        class="text-white text-decoration-line">
+                        info@drupal-coder.ru
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <form method="POST" class="contact-form">
+                <input type="text" class="mb-2 form-control"
+                  name="name" placeholder="Your name" required />
+
+                <input type="tel" class="mb-2 form-control"
+                  name="phone" placeholder="Phone" required />
+
+                <input type="email" class="mb-2 form-control"
+                  name="email" placeholder="E-mail" required />
+
+                <textarea class="mb-2 form-control" name="message"
+                  placeholder="Your comment" rows="3"></textarea>
+
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox"
+                    required name="agree" />
+                  <label class="form-check-label" for="agreeCheckbox">
+                    By submitting an application I consent to the processing
+                    of my personal data.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-100">
+                  CONTACT US
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <hr class="footer__divider mt-5 mb-4" />
+
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-center mb-2 social">
+              <a href="https://vk.com" class="footer__icon me-3">
+                <img src="static/images/vk_icon.png" alt="VK"
+                  class="social__icon" />
+              </a>
+              <a href="https://facebook.com" class="footer__icon me-3">
+                <img src="static/images/facebook_icon.png" alt="Facebook"
+                  class="social__icon" />
+              </a>
+              <a href="https://youtube.com" class="footer__icon me-3">
+                <img src="static/images/youtube_icon.png" alt="YouTube"
+                  class="social__icon" />
+              </a>
+              <a href="https://web.telegram.org" class="footer__icon me-3">
+                <img src="static/images/tg_icon.png" alt="Telegram"
+                  class="social__icon" />
+              </a>
+            </div>
+
+            <div class="col-lg-12 mt-2">
+              <p class="footer__note mb-1">Copyright © Initlab, LLC</p>
+              <p class="footer__note mb-1">
+                Drupal is a registered trademark of Dries Buytaert.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
   </body>
