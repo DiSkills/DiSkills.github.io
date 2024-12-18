@@ -9,13 +9,6 @@ header {
     background-color: rgb(5, 6, 19);
 }
 
-.header__wrapper {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
 .nav-link:focus,
 .nav-link:hover,
 .nav-link,
@@ -29,34 +22,18 @@ header {
     background-color: brown;
 }
 
-#video-block {
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -10;
-}
-
-#video-block__filter {
-    background-color: rgba(0, 0, 0, 0.75);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-.video-background {
-    filter: blur(2px);
+.header__video {
+    bottom: 0;
     min-height: 100%;
     min-width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
 
 .header {
     color: white;
+    margin-top: 20px;
     padding-top: 20px;
     position: relative;
     width: 100%;
@@ -70,7 +47,7 @@ header {
     text-align: center;
 }
 
-.header__rate-button {
+.header__review-button {
     border-radius: 5px;
     border: 2px solid #f14d34;
     color: white;
@@ -88,7 +65,7 @@ header {
     width: 220px;
 }
 
-.header__rate-button:hover {
+.header__review-button:hover {
     background: #f14d34;
     color: white;
     text-decoration: none;
@@ -129,27 +106,13 @@ header {
     color: #f14d34;
 }
 
-.header__redline__wrap {
-    margin-top: 50px;
-}
-
 .header__title {
     text-align: center;
-}
-
-@media screen and (min-width: 768px) and (min-height: 576px) {
-    .header {
-        margin-top: 15lvh;
-    }
 }
 
 @media screen and (min-width: 768px) {
     .header__title {
         text-align: left;
-    }
-
-    .header {
-        padding-top: 40px;
     }
 
     .header__sub-title {
@@ -172,8 +135,7 @@ header {
         font-size: 42px;
     }
 
-    .header__rate-button {
-        margin-bottom: 155px;
+    .header__review-button {
         margin-left: 0;
     }
 }
