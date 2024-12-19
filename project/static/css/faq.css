@@ -1,29 +1,33 @@
 .accordion {
+    --bs-accordion-border-color: #ffffff;
     color:#050C33;
     padding-bottom: 50px;
-    --bs-accordion-border-color: #ffffff;
 }
 
 .accordion-content {
-    padding: 0 20px; 
-    max-height: 0; 
-    overflow: hidden;
     background-color: #ffffff;
     font-size: 16px;
+    max-height: 0; 
+    overflow: hidden;
+    padding: 0 20px; 
     transition: max-height 0.3s ease; 
 }
 
 .accordion-header {
-    color:#050C33;
     background-color: #ffffff;
-    transition: background-color 0.3s ease;
+    color:#050C33;
     display: flex;
+    transition: background-color 0.3s ease;
 }
 
 .accordion-header h3 {
     font-size: 22px;
     font-weight: 700;
     text-align: left;
+}
+
+.accordion-item:hover {
+    cursor: pointer;
 }
 
 .accordion-item.active {
@@ -40,32 +44,31 @@
     font-weight: 600;
 }
 
-
 .accordion p {
     color:#4e5a73;
     font-size: 16px;
     font-weight: 500;
 }
 
-#faq{
-    margin-right: auto;
+#faq {
     margin-left: auto;
+    margin-right: auto;
     padding-left: 3vh;
     padding-right: 3vh;
 }
 
-.faq__title{
-    text-align: center;
+.faq__title {
     color:#050613;
     font-size: 40px;
     font-weight: 700;
+    text-align: center;
 }
 
 
 @media screen and (min-width: 992px){
     #faq {
-        margin-right: auto;
         margin-left: auto;
+        margin-right: auto;
         padding-left: 10%;
         padding-right: 10%;
     }
