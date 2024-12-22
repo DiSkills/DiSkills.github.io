@@ -66,10 +66,10 @@
 
 @media screen and (min-width: 992px){
     #faq {
-        margin-left: 30%;
+        margin-left: 10%;
         margin-bottom: 10%;
-        margin-right: 30%;
-        padding-left: 20%;
-        padding-right: 20%;
+        margin-right: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
