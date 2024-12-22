@@ -1,0 +1,68 @@
+.improvement__block {
+    margin-top: 35px;
+    position: relative;
+}
+
+.improvement__block__shadow {
+    position: absolute;
+    z-index: -1; 
+    left: -50px;
+    top: 10px;
+    min-width: 30%;
+}
+
+.improvement__comment {
+    color: #646b81;
+    font-size: medium;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.improvement__title {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: initial;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+
+@media (max-width: 767px) {
+    #improvement {
+        margin: 0px;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        padding: 20px;
+    }
+
+    .improvement__block {
+        text-align: center;
+    }
+
+    .improvement__block__shadow {
+        left: 0px;
+    }
+
+    .improvement__title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #improvement {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 10%;
+    }
+}
