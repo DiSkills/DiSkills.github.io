@@ -66,6 +66,12 @@
 
 }
 
+@media screen and (min-width: 1000px) {
+    #support{
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
 
 @media (max-width: 767px) {
     .col-xs-6{
