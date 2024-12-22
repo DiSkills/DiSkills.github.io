@@ -1,0 +1,9 @@
+.max-w-1000 {
+    max-width: 1000px;
+}
+
+@media screen and (min-width: 768px) {
+    #tasks{
+        margin-left:15%;
+    }
+}
