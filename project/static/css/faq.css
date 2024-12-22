@@ -64,6 +64,11 @@
     text-align: center;
 }
 
+@media screen and (min-width: 1000px) {
+    #faq{
+        margin-bottom: 15%;
+    }
+}
 
 @media screen and (min-width: 992px){
     #faq {
