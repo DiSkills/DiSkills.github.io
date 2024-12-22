@@ -146,9 +146,7 @@
 
 @media (max-width: 992px) {
     #reviews {
-        margin-bottom: 110px;
         padding-top: 35px;
-        margin-top: 20%;
     }
 
     .reviews__content {
