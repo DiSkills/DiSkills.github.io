@@ -3,12 +3,12 @@
 }
 
 .member__function{
-    padding: 0;
     color: #505570;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.37;
     margin-bottom: 5px;
-    font-size: 12px;
+    padding: 0;
 }
 
 .member__item {
@@ -31,34 +31,31 @@
 }
 
 .member__name{
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
     color: #050c33;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
     line-height: 1.35;
+    margin-bottom: 5px;
+    text-decoration: none;
 }
 
 .team__footer{
     text-align: center;
-    margin-top: 45px;
-    margin-bottom: 30px;
 }
 
 .team__footer a {
-    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #cccdd5;
+    color: #050c33;
     display: inline-block;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
     line-height: 1;
-    text-transform: uppercase;
-    color: #050c33;
-    border: 1px solid #cccdd5;
-    border-radius: 5px;
+    padding: 10px 30px;
     text-decoration: none;
-    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .team__tittle{
