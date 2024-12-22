@@ -110,6 +110,10 @@
     width: 100%;
 }
 
+#tarrifs{
+    margin-bottom: 40px;
+}
+
 @media (min-width: 768px) {
     .tariff__block {
         flex-wrap: nowrap;
